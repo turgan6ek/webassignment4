@@ -1,0 +1,178 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Page header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #5a33a2;
+    margin: 0;
+    font-weight: bold;
+}
+
+header nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+/* Add Post Button Styling */
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+.button:hover {
+    background-color: #357a38;
+}
+
+/* Main content styling */
+main {
+    flex: 1;
+}
+
+.post-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #5a33a2;
+}
+
+form input[type="text"],
+form input[type="datetime-local"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: inherit;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button[type="submit"] {
+    align-self: flex-start;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+}
+
+form button[type="submit"]:hover {
+    background-color: #357a38;
+}
+
+/* Styling for each post item */
+.post-content ul {
+    padding: 0;
+    list-style: none;
+}
+
+.post-content li {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-content h2 {
+    font-size: 1.5em;
+    color: #5a33a2;
+    margin: 0;
+}
+
+.post-content p {
+    margin: 5px 0;
+}
+
+/* Link styling */
+a {
+    text-decoration: none;
+    color: #5a33a2;
+}
+
+a:hover {
+    color: #3b2370;
+}
+
+/* Sticky Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.9em;
+    color: #666;
+    margin-top: auto;
+}
+
+.post-content li {
+    margin: 20px 0;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.post-content img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.post-content h2 {
+    font-size: 1.5em;
+    color: #5a33a2;
+    margin: 0;
+}
